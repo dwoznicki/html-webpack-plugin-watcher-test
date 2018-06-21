@@ -11,6 +11,9 @@ When caching the child compilation promise in html-webpack-plugin, webpack appea
 Clone this repository and `cd` into it. Run:
 ```
 npm install
+cd html-webpack-plugin
+npm install
+cd ..
 npx webpack --watch
 ```
 While webpack is watching, edit and save `src/index.js` so that webpack recompiles the project a couple times. Each recompile, the plugin should log either "OK: watcher exists" (if the watcher for `template.html` exists) or "ERROR: missing watcher" (if the watcher for `template.html` doesn't exist).
